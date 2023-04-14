@@ -1,0 +1,91 @@
+<html>
+  <head>
+  </head>
+  <body >
+<h1 align =center><b><i>PADDY PLANT DISEASE IDENTIFICATION</i></b></h1>
+<style> 
+.container
+{
+ text-align: center;
+ margin: 0 auto;
+ padding: 10px;
+}
+#previewImage
+{
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+body {
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.container { 
+  height: 200px;
+  position: relative;
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button1 {
+  background-color: #ADD8E6; 
+  color: black; 
+  border: 2px solid  #008CBA;
+border-radius: 12px;
+padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color:  #008CBA;
+  color: #ADD8E6;
+}
+</style>
+  <div class="container">
+    <input type="file" id="inputImage" accept="image/*">
+    <img id="previewImage"/>
+    <p id="errorMsg"></p>
+  </div>
+<script>
+function previewImage(event) 
+{
+    const reader = new FileReader();
+    reader.onload = function() {
+        const element = document.getElementById('previewImage');
+        element.src = reader.result;
+    }
+    reader.onerror = function() {
+        const element = document.getElementById('errorMsg');
+        element.value = "Couldn't load the image.";
+    }
+    reader.readAsDataURL(event.target.files[0]);
+}
+
+const input = document.getElementById('inputImage');
+input.addEventListener('change', (event) => {
+    previewImage(event)
+});
+</script><div class="container">
+  <div class="center"><a href="team10_2.html">
+    <button class="button button1">Submit</button></a>
+  </div>
+</div>
+
+  </body>
+</html>

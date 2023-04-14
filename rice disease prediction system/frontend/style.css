@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3e3037;
+    /* padding-block: 15px; */
+}
+.navbar a {
+    text-decoration: none;
+    color: #e6fefb;
+	padding-left: 40px;
+}
+.logo {
+    margin-right: 50px;
+}
+.nav-text{
+    color: #e6fefb;   
+    padding-right: 40px;
+}
+.container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+	width: 350px;
+	background-color: #e6fefb;
+	padding: 20px 8px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.card h2{
+	font-weight: 500;
+	color: #000;
+}
+
+.card img{
+	width: 300px;
+	height: 300px;
+	margin-top: 18px;
+	margin-bottom: 18px;
+	border-radius: 10px;
+	text-align: center;
+}
+.upload-btn{
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+	cursor: pointer;
+}
+button[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
